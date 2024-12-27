@@ -28,7 +28,7 @@ response = requests.get("https://www.google.com")
 url ="https://books.toscrape.com/"
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser') # 'html.parser' is written in c and it is very faster than 'html5lib' (that is supported with python) and 'lxml_xml' or lxml 
-print(soup.prettify())
+#print(soup.prettify())
 
 # Fonction pour parcourir recursivement l arbre DOM
 def traverse_dom(element, level=0):
